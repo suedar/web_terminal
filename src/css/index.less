@@ -1,0 +1,90 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body {
+    height: 100%;
+    width: 100%
+}
+.blue {
+    color: #448ee3;
+}
+.yellow {
+    color: #f2eb69;
+}
+.root {
+    width: 100vw;
+    height: 100vh;
+    background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+    // background-color: aqua;
+    // filter: blur(1px);
+    .bg-blur {
+        float: left;
+        height: 100%;
+        width: 100%;
+        background-image: url('../static/background.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        filter: blur(2px);
+    }
+    .terminal {
+        position: absolute;
+        box-shadow: 1px 2px 6px #000;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        transition: width 1s, height 1s;
+        width: 60%;
+        height: 70%;
+        border-radius: 5px;
+        background-color: #d2d2d2;
+        overflow: hidden;
+        header {
+            // margin-top: -50%;
+            // top: 50%;
+            width: 100%;
+            text-align: center;
+            // height: 10%;
+            height: 50px;
+            line-height: 50px;
+            display: inline-block;
+            // overflow: hidden;
+        }
+        #content {
+            padding: 10px;
+            width: calc(100% - 20px);
+            height: calc(100% - 70px);
+            background-color: #262525;
+            // overflow: hidden;
+            font-size: 13px;
+            color: aliceblue;
+            overflow-y: scroll;
+            .input {
+                overflow: hidden;
+                .code {
+                    // width: 3px;
+                    background-color: #ccc;
+                }
+                .frontName {
+                    // flex: 0 0 205px;
+                    float: left;
+                    width: 215px;
+                }
+                .insert {
+                    word-wrap:break-word;
+                }
+                .dark {
+                    background-color: #262525;
+                }
+            }
+        }
+    }
+}
+input {
+    font-size: 13px;
+    color: aliceblue;
+    background:none;
+    outline:none;
+    border:0px;
+}
